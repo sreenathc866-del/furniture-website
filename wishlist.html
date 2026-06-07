@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wishlist page for Kairali Furniture. Save and manage furniture you love for easy checkout." />
+  <title>Kairali Furniture | Wishlist</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="dark" data-page="wishlist">
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section wishlist-section">
+    <div class="container">
+      <div class="section-head">
+        <span>Wishlist</span>
+        <h2>Your Saved Furniture</h2>
+      </div>
+      <div class="product-grid" id="wishlistGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Your luxury wishlist in Kerala.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

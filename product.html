@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Product detail page for Kairali Furniture. Explore our luxury furniture options with 3D previews, reviews, and purchase options." />
+  <title>Kairali Furniture | Product Details</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="dark" data-page="product">
+  <div class="loader" id="siteLoader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Loading Product...</div>
+  </div>
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <nav class="nav-menu">
+        <a href="index.html#featured">Featured</a>
+        <a href="index.html#collections">Categories</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <a href="cart.html" class="icon-button">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-page-main">
+    <section class="product-hero glass-panel">
+      <div class="product-gallery" id="imageGallery"></div>
+      <div class="product-detail-panel">
+        <span class="eyebrow" id="productCategory">Luxury Sofa</span>
+        <h1 id="productTitle">Modern Sofa Collection</h1>
+        <p class="product-price" id="productPrice">₹18,999</p>
+        <p class="product-stock" id="productStock">In stock</p>
+        <p id="productDescription">Handcrafted sofa set with premium texture, ideal for contemporary spaces.</p>
+        <div class="product-actions">
+          <button class="button button-primary" id="addToCartButton">Add to Cart</button>
+          <button class="button button-secondary" id="buyNowButton">Buy Now</button>
+        </div>
+        <div class="product-meta">
+          <p><strong>Category:</strong> <span id="productCategoryLabel">Sofa</span></p>
+          <p><strong>Rating:</strong> <span id="productRating">4.9/5</span> • <strong>Reviews:</strong> <span id="productReviewsCount">128</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section glass-panel">
+      <div class="section-head">
+        <span>3D Preview</span>
+        <h2>Interactive Model</h2>
+      </div>
+      <div class="product-preview">
+        <canvas id="productPreviewCanvas"></canvas>
+      </div>
+    </section>
+
+    <section class="section section-related">
+      <div class="section-head">
+        <span>Related Picks</span>
+        <h2>Customers Also Love</h2>
+      </div>
+      <div class="product-grid" id="relatedProducts"></div>
+    </section>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Luxury furniture from Karinkallathani, Kerala.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

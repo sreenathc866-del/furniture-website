@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Admin dashboard for Kairali Furniture. Manage products, orders, and customers securely." />
+  <title>Kairali Furniture | Admin Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="dark" data-page="admin">
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section admin-section">
+    <div class="container">
+      <div id="adminLoginPanel" class="glass-panel auth-panel">
+        <h1>Admin Login</h1>
+        <form id="adminLoginForm" class="auth-form">
+          <div class="form-group">
+            <label for="adminEmail">Email</label>
+            <input type="email" id="adminEmail" placeholder="admin@kairali.com" required />
+          </div>
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" placeholder="••••••••" required />
+          </div>
+          <button type="submit" class="button button-primary">Login</button>
+        </form>
+      </div>
+
+      <div id="adminDashboard" class="glass-panel" style="display:none; padding: 2rem; border-radius: 28px;">
+        <div class="section-head">
+          <span>Admin Dashboard</span>
+          <h2>Manage Products, Stock, and Orders</h2>
+        </div>
+        <div class="admin-summary">
+          <div class="admin-card glass">
+            <h3 id="adminProductsCount">0</h3>
+            <p>Products</p>
+          </div>
+          <div class="admin-card glass">
+            <h3 id="adminOrdersCount">0</h3>
+            <p>Orders</p>
+          </div>
+          <div class="admin-card glass">
+            <h3 id="adminUsersCount">0</h3>
+            <p>Customers</p>
+          </div>
+        </div>
+
+        <section class="glass-panel" style="padding: 2rem; margin-top: 2rem; border-radius: 28px;">
+          <h3>Add New Product</h3>
+          <form id="productForm" class="auth-form">
+            <div class="form-group">
+              <label for="productName">Name</label>
+              <input type="text" id="productName" required />
+            </div>
+            <div class="form-group">
+              <label for="productCategory">Category</label>
+              <select id="productCategory" required>
+                <option value="Sofa">Sofa</option>
+                <option value="Bed">Bed</option>
+                <option value="Dining Table">Dining Table</option>
+                <option value="Wardrobe">Wardrobe</option>
+                <option value="TV Unit">TV Unit</option>
+                <option value="Office Furniture">Office Furniture</option>
+                <option value="Home Furniture">Home Furniture</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="productPrice">Price</label>
+              <input type="number" id="productPrice" required />
+            </div>
+            <div class="form-group">
+              <label for="productStock">Stock</label>
+              <input type="number" id="productStock" required />
+            </div>
+            <div class="form-group">
+              <label for="productImage">Image URL</label>
+              <input type="url" id="productImage" placeholder="https://example.com/image.jpg" />
+            </div>
+            <div class="form-group">
+              <label for="productFile">Or upload product image</label>
+              <input type="file" id="productFile" accept="image/*" />
+            </div>
+            <div class="form-group" id="uploadStatus" style="display:none;">
+              <label>Upload Progress</label>
+              <progress id="uploadProgress" max="100" value="0" style="width:100%;"></progress>
+              <div id="uploadMessage" style="margin-top:0.5rem;color:var(--muted);font-size:0.95rem"></div>
+            </div>
+            <div class="form-group">
+              <label for="productDescription">Description</label>
+              <textarea id="productDescription" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="button button-primary">Add Product</button>
+          </form>
+        </section>
+
+        <section class="glass-panel" style="padding: 2rem; margin-top: 2rem; border-radius: 28px;">
+          <h3>Product Inventory</h3>
+          <div id="adminProductList" class="product-grid"></div>
+        </section>
+
+        <button id="adminLogout" class="button button-secondary" style="margin-top: 1.5rem;">Logout</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Admin panel for store management.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/admin.js"></script>
+</body>
+</html>

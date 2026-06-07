@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Track your Kairali Furniture order and view shipping status." />
+  <title>Kairali Furniture | Order Tracking</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="dark" data-page="order">
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section order-section">
+    <div class="container glass-panel order-tracking-panel">
+      <div class="section-head">
+        <span>Order Tracking</span>
+        <h2>Track Your Furniture Delivery</h2>
+      </div>
+      <p>Enter your order number or use the latest order from your profile.</p>
+      <form id="orderTrackForm" class="order-track-form">
+        <input type="text" id="orderNumber" placeholder="Order #KF2026-1347" required />
+        <button type="submit" class="button button-primary">Track Order</button>
+      </form>
+      <div id="orderStatus" class="order-status"></div>
+    </div>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Track your premium furniture order today.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

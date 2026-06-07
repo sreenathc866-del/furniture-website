@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your Kairali Furniture profile. Manage your orders, addresses, wishlist, and account details." />
+  <title>Kairali Furniture | Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="dark" data-page="profile">
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="wishlist.html">Wishlist</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <button class="button button-secondary" id="logoutButton">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section profile-section">
+    <div class="container profile-grid">
+      <aside class="glass-panel profile-aside">
+        <h2>Your Account</h2>
+        <div class="profile-card">
+          <p><strong id="profileName">Guest User</strong></p>
+          <p id="profileEmail">Please login to manage your data.</p>
+        </div>
+        <div class="profile-meta">
+          <h3>Saved Addresses</h3>
+          <ul id="addressList"></ul>
+          <button class="button button-secondary" id="addAddressButton">Add Address</button>
+        </div>
+      </aside>
+
+      <div class="profile-main">
+        <section class="glass-panel profile-box">
+          <h3>Order History</h3>
+          <div id="orderHistory" class="order-history"></div>
+        </section>
+        <section class="glass-panel profile-box">
+          <h3>Wishlist</h3>
+          <div id="profileWishlist" class="product-grid"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Personalized furniture service in Kerala.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

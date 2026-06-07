@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kairali Furniture - Luxury modern furniture store in Kerala. Premium sofas, beds, dining tables, wardrobes, and office furniture." />
+  <meta name="keywords" content="Luxury furniture, modern furniture, Kerala furniture store, home furniture, sofa, bed, dining table" />
+  <title>Kairali Furniture | Luxury Modern Furniture</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="dark" data-page="home">
+  <div class="loader" id="siteLoader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">Kairali Furniture</div>
+  </div>
+  <header class="topbar glass">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">Kairali<span>Furniture</span></a>
+      <nav class="nav-menu">
+        <a href="#collections">Categories</a>
+        <a href="#featured">Featured</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle theme">☀️</button>
+        <a href="cart.html" class="icon-button" aria-label="Shopping cart">🛒</a>
+        <a href="login.html" class="button button-secondary">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-split" id="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">16 Years of Luxury Craftsmanship</span>
+        <h1>Curated Modern Furniture with Kerala Soul.</h1>
+        <p>Discover premium sofas, elegant beds, designer dining tables, and statement wardrobes created for refined living.</p>
+        <div class="hero-actions">
+          <a href="#featured" class="button button-primary">Explore Collections</a>
+          <a href="product.html?id=sofa-01" class="button button-secondary">Shop Best Sellers</a>
+        </div>
+      </div>
+      <div class="hero-visual glass-panel">
+        <canvas id="heroScene"></canvas>
+      </div>
+    </section>
+
+    <section class="section intro-grid">
+      <article class="card intro-card glass">
+        <h2>Premium Materials</h2>
+        <p>Handpicked solid wood, premium upholstery and artisan finishes for every luxury interior.</p>
+      </article>
+      <article class="card intro-card glass">
+        <h2>Modern Design</h2>
+        <p>Contemporary silhouettes, clean lines and statement proportions designed for today’s homes.</p>
+      </article>
+      <article class="card intro-card glass">
+        <h2>Trusted Service</h2>
+        <p>Personalized support, reliable delivery and professional installation across Kerala.</p>
+      </article>
+    </section>
+
+    <section class="section section-featured" id="featured">
+      <div class="section-head">
+        <span>Featured Collection</span>
+        <h2>Best Selling Furniture</h2>
+      </div>
+      <div class="product-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="section section-category" id="collections">
+      <div class="section-head">
+        <span>Categories</span>
+        <h2>Shop by Furniture Type</h2>
+      </div>
+      <div class="category-grid" id="categoryCards"></div>
+    </section>
+
+    <section class="section section-arrivals">
+      <div class="section-head">
+        <span>New Arrivals</span>
+        <h2>Fresh Luxury Designs</h2>
+      </div>
+      <div class="product-grid" id="newArrivals"></div>
+    </section>
+
+    <section class="section section-why glass-panel">
+      <div class="section-head">
+        <span>Why Kairali?</span>
+        <h2>Trusted by Customers Across Kerala</h2>
+      </div>
+      <div class="why-grid">
+        <div>
+          <h3>Custom Interiors</h3>
+          <p>Design consultations and custom sizing options for every room.</p>
+        </div>
+        <div>
+          <h3>Transparent Pricing</h3>
+          <p>Clear product costs, EMI calculators and flexible payment support.</p>
+        </div>
+        <div>
+          <h3>Fast Delivery</h3>
+          <p>Scheduled delivery from Karinkallathani to Malabar, Kochi and beyond.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reviews" id="reviews">
+      <div class="section-head">
+        <span>Customer Love</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card glass">
+          <p>"Absolutely stunning furniture. The craftsmanship and finish are exceptional."</p>
+          <strong>– Priya, Thrissur</strong>
+        </article>
+        <article class="review-card glass">
+          <p>"Beautiful delivery experience and responsive service from the Kairali team."</p>
+          <strong>– Sameer, Malappuram</strong>
+        </article>
+        <article class="review-card glass">
+          <p>"Our living room feels more elegant than ever. Highly recommend their sofa collection."</p>
+          <strong>– Anjali, Kozhikode</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="contact-panel glass-panel">
+        <div>
+          <span class="eyebrow">Visit Our Store</span>
+          <h2>Kairali Furniture</h2>
+          <p>Karinkallathani, Edappal, Kerala 679584</p>
+          <p>Call us: <a href="tel:+914842123456">+91 484 212 3456</a></p>
+          <p>Email: <a href="mailto:info@kairalifurniture.com">info@kairalifurniture.com</a></p>
+          <div class="contact-actions">
+            <a href="https://wa.me/919876543210" class="button button-primary" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a href="https://www.google.com/maps/place/Karinkallathani,+Edappal" class="button button-secondary" target="_blank" rel="noopener">View on Google Maps</a>
+          </div>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.995543709197!2d76.03353891533413!3d10.795494192307396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8444f73f7f9bf%3A0x5c6101fafc95d6a3!2sEdappal%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-newsletter glass-panel">
+      <div>
+        <h2>Stay Updated on New Arrivals</h2>
+        <p>Subscribe for exclusive offers, design tips, and early access to premium launches.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+        <button type="submit" class="button button-primary">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer glass-panel">
+    <div class="container footer-inner">
+      <p>© 2026 Kairali Furniture. Crafted with luxury interiors in Kerala.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
